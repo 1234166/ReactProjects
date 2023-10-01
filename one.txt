@@ -1,0 +1,24 @@
+
+import {View,Text,StyleSheet, Platform} from 'react-native'
+import React from 'react'
+
+const App = () =>{
+    const isAndroid = Platform.OS === 'isAndroid';
+    return(
+        <>
+         <View style={[styles.container,{
+            flexDirection: 'column',
+            marginTop: isAndroid ? 2 : 0
+         },]}>
+        <View style={{backgroundColor: 'green',padding: 16}}><Text>Search</Text></View>
+        <View style={{flex: 1, backgroundColor: 'blue', padding:16}}><Text>list</Text></View>
+        </View>
+        </>
+    )
+}
+const styles = StyleSheet.create({
+    container: {
+        flex: 1
+    }
+})
+export default App

